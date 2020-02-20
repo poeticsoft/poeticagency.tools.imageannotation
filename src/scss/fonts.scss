@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'FSEC Regular';
+  src: url('./scss/fonts/fira/FiraSansExtraCondensed-Regular.eot');
+  src: url('./scss/fonts/fira//FiraSansExtraCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Regular.woff2') format('woff2'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Regular.woff') format('woff'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FSEC ExtraBold';
+  src: url('./scss/fonts/fira/FiraSansExtraCondensed-ExtraBold.eot');
+  src: url('./scss/fonts/fira/FiraSansExtraCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-ExtraBold.woff2') format('woff2'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-ExtraBold.woff') format('woff'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FSEC Italic';
+  src: url('./scss/fonts/fira/FiraSansExtraCondensed-Italic.eot');
+  src: url('./scss/fonts/fira/FiraSansExtraCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Italic.woff2') format('woff2'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Italic.woff') format('woff'),
+       url('./scss/fonts/fira/FiraSansExtraCondensed-Italic.ttf') format('truetype');
+}

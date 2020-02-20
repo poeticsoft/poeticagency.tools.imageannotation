@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLightItalic.svg#FiraSansExtraCondensed-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-ThinItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-ThinItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-ThinItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-ThinItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-ThinItalic.svg#FiraSansExtraCondensed-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-BoldItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-BoldItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-BoldItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-BoldItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-BoldItalic.svg#FiraSansExtraCondensed-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Bold.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Bold.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Bold.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Bold.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Bold.svg#FiraSansExtraCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Regular.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Regular.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Regular.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Regular.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Regular.svg#FiraSansExtraCondensed-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraBold.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBold.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBold.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBold.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBold.svg#FiraSansExtraCondensed-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Italic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Italic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Italic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Italic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Italic.svg#FiraSansExtraCondensed-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBoldItalic.svg#FiraSansExtraCondensed-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-SemiBold.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBold.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBold.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBold.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-SemiBold.svg#FiraSansExtraCondensed-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraBoldItalic.svg#FiraSansExtraCondensed-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Medium.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Medium.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Medium.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Medium.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Medium.svg#FiraSansExtraCondensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-MediumItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-MediumItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-MediumItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-MediumItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-MediumItalic.svg#FiraSansExtraCondensed-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraLight.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLight.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLight.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLight.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-ExtraLight.svg#FiraSansExtraCondensed-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-LightItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-LightItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-LightItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-LightItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-LightItalic.svg#FiraSansExtraCondensed-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Black.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Black.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Black.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Black.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Black.svg#FiraSansExtraCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-BlackItalic.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-BlackItalic.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-BlackItalic.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-BlackItalic.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-BlackItalic.svg#FiraSansExtraCondensed-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Light.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Light.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Light.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Light.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Light.svg#FiraSansExtraCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSEC';
+    src: url('fonts/fira/FiraSansExtraCondensed-Thin.eot');
+    src: url('fonts/fira/FiraSansExtraCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fira/FiraSansExtraCondensed-Thin.woff2') format('woff2'),
+        url('fonts/fira/FiraSansExtraCondensed-Thin.woff') format('woff'),
+        url('fonts/fira/FiraSansExtraCondensed-Thin.ttf') format('truetype'),
+        url('fonts/fira/FiraSansExtraCondensed-Thin.svg#FiraSansExtraCondensed-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
