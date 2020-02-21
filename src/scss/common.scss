@@ -1,4 +1,21 @@
+html,
+body {
 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-#PoeticAgencyImageAnnotations {
+body {
+
+  overflow: hidden;
+}
+
+#PoeticAgencyImageAnnotations,
+.Annotator,
+.Annotation,
+.AnnotationsList {
+
+  @include absolutebox();
+
 }

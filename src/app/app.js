@@ -3,14 +3,18 @@ import React, {
   useState,
   useEffect
 } from 'react'
-import { Provider } from 'react-redux'
-import store from './redux/store'
-import * as Actions from './redux/actions'
+import Annotation from 'react-image-annotation'
+import {
+  PointSelector,
+  RectangleSelector,
+  OvalSelector
+} from 'react-image-annotation/lib/selectors'
 
 // http://arianv.me/react-image-annotation/docs
 
 const App = props => {
 
+  const [ loaded, setLoaded ] = useState(false)
   const [ annotations, setAnnotations ] = useState([])
   const [ annotation, setAnnotation ] = useState({})
 
@@ -23,7 +27,7 @@ const App = props => {
 
     const { geometry, data } = annotation
 
-    setAnnotation({}),
+    setAnnotation({})
     setAnnotations(
       annotations.concat({
         geometry,
@@ -34,20 +38,59 @@ const App = props => {
       })
     )
   }
+
+  useEffect(() => {
+
+    fetch('/wp-json/poeticagency/imageannotations')
+    .then(response => {
+
+      response.json()
+      .then(data => {
+
+        setAnnotations(JSON.parse(data))
+        setLoaded(true)
+      })
+    })
+  }, [])
+
+  useEffect(() => {
+
+    if(!loaded) { return }
+
+    const data = new FormData()     
+    data.append('annotations', JSON.stringify(annotations))
+
+    const fetchConfig = {
+      method: 'POST',
+      body: data
+    }
+
+    fetch(
+      '/wp-json/poeticagency/imageannotations',
+      fetchConfig 
+    )
+
+  }, [annotations])
   
-  return <Provider store={ store }>
-    <Annotation
-      src={img}
-      alt='Two pebbles anthropomorphized holding hands'
-
-      annotations={this.state.annotations}
-
-      type={this.state.type}
-      value={this.state.annotation}
-      onChange={this.onChange}
-      onSubmit={this.onSubmit}
-    />
-  </Provider> 
+  return <div 
+    className="Annotator"
+  >
+    <div className="Annotation">
+      <Annotation
+        src={ window.imageannotationsrc }
+        annotations={ annotations }
+        type={ RectangleSelector.TYPE }
+        value={ annotation }
+        onChange={ onChange }
+        onSubmit={ onSubmit }
+        allowTouch
+      />
+    </div>
+    <div
+      className="AnnotationsList">
+      { annotations.length }
+    </div>
+  </div>
 }
 
 export default App
